@@ -1,5 +1,11 @@
 .rounded-corners {
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     padding: 15px;
+}
+
+.oval-image {
+    border-radius: 15% 50%; /* Hace que el borde sea ovalado */
+    overflow: hidden; /* Recorta la parte fuera del borde */
+    border: 3px solid #26DF96;
 }
