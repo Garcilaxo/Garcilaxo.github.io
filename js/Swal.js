@@ -13,7 +13,8 @@ function Loading() {
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
     });
-    //window.location.href = "Ficha.html";
+    
+    window.location.href = "Ficha.html";
 
     Swal.close();
 }
