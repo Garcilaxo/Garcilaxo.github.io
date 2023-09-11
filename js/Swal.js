@@ -1,15 +1,19 @@
 function Loading() {
+    
     Swal.showLoading();
-
-    var cargarFicha = document.getElementById("cargarFicha");
 
     // Aquí puedes realizar alguna operación asincrónica, como cargar datos o realizar una solicitud AJAX
     // Después de que la operación asincrónica haya finalizado, puedes ocultar el mensaje de carga con Swal.close()
 
-    cargarFicha.addEventListener("click", function () {
-        // Redirige al usuario a "nueva_pagina.html"
-        window.location.href = "Ficha.html";
+    fetch('json/data.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Imprimir el contenido del archivo JSON en la consola
+    })
+    .catch(error => {
+        console.error('Error al cargar el archivo JSON:', error);
     });
+    //window.location.href = "Ficha.html";
 
     Swal.close();
 }
