@@ -1,9 +1,15 @@
-fetch('json/data.json')
-  .then(response => response.json())
-  .then(data => {
-    // Hacer algo con los datos del JSON
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error al cargar el archivo JSON:', error);
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  // Leer los datos del almacenamiento local
+  const dataJSON = localStorage.getItem("datosJSON");
+  if (dataJSON) {
+      const data = JSON.parse(dataJSON);
+
+      // Mostrar los datos en la página
+      document.getElementById("nombre").textContent = `Nombre: ${data.username}`;
+      //document.getElementById("edad").textContent = `Edad: ${data.edad}`;
+      //document.getElementById("ciudad").textContent = `Ciudad: ${data.ciudad}`;
+  } 
+  else {
+      console.error("No se encontraron datos en el almacenamiento local.");
+  }
+});
