@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("link").href = data.influcard.account_url;
       document.getElementById("edad").textContent = `Mujer, ${data.influcard.age} años`;
       document.getElementById("date").textContent = `Datos actualizados a ${data.influcard.updated_at_formated}`;
-
+      document.getElementById("followers").textContent = `${data.influcard.followers_formated} K`;
+      document.getElementById("fake_followers").textContent = `${data.influcard.fake_followers_formated} K`;
+      document.getElementById("real_followers").textContent = `${data.influcard.real_followers_formated} K`;
+      
   } 
   
   else {
