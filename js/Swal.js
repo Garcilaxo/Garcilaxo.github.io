@@ -8,7 +8,10 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data.influcard); // Imprimir el contenido del archivo JSON en la consola
+        const claves = Object.keys(data);
+        for (let clave of claves) {
+            console.log(clave + ": " + data[clave]);
+        }
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
