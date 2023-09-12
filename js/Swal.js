@@ -26,4 +26,4 @@ function Loading() {
     Swal.close();
 }
 
-document.addEventListener("DOMContentLoaded", Loading);
+
