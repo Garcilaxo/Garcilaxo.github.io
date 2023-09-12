@@ -19,5 +19,7 @@ function Loading() {
         console.error("Error:", error);
     });
 
+    CargarDatos();
+
     Swal.close();
 }
