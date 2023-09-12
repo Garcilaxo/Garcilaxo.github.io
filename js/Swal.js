@@ -8,13 +8,16 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data.influcard.username);
+        // Almacenar los datos en el almacenamiento local (localStorage)
+        localStorage.setItem("datosJSON", JSON.stringify(data));
+        console.log(data.influcard);
+
+        // Redirigir al usuario al archivo resultado.html
+        window.location.href = "Ficha.html";
     })
     .catch(error => {
-        console.error('Error al cargar el archivo JSON:', error);
+        console.error("Error:", error);
     });
-    
-    //window.location.href = "Ficha.html";
 
     Swal.close();
 }
