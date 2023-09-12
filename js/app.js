@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("followers").textContent = `${data.influcard.followers_formated}`;
       document.getElementById("fake_followers").textContent = `${data.influcard.fake_followers_formated} %`;
       document.getElementById("real_followers").textContent = `${data.influcard.real_followers_formated}`;
+      document.getElementById("audiencia").textContent = `${data.influcard.followers_formated}`;
       document.getElementById("alcance").textContent = `${data.influcard.reach_formated}`;
       document.getElementById("impresiones").textContent = `${data.influcard.avg_impressions_formated}`;
       document.getElementById("reproducciones").textContent = `${data.influcard.vplays_formated}`;
