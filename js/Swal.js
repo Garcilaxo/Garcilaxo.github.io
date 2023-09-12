@@ -8,7 +8,7 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        console.log(data.influcard);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
