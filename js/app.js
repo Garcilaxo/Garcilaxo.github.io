@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function() {
   // Leer los datos del almacenamiento local
   const dataJSON = localStorage.getItem("datosJSON");
@@ -13,3 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
       console.error("No se encontraron datos en el almacenamiento local.");
   }
 });
+*/
