@@ -15,13 +15,13 @@ function Loading() {
         .then(data => {
             // Almacenar los datos en el almacenamiento local (localStorage)
             localStorage.setItem("datosJSON", JSON.stringify(data));
-
-            // Redirigir al usuario al archivo resultado.html
-            window.location.href = "Ficha.html";
         })
         .catch(error => {
             console.error("Error:", error);
         });
+
+    // Redirigir al usuario al archivo resultado.html
+    window.location.href = "Ficha.html";
 
     Swal.close();
 }
