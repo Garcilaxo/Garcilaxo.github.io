@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("imagen").src = data.influcard.account_picture;
       document.getElementById("link").href = data.influcard.account_url;
       document.getElementById("edad").textContent = `Mujer, ${data.influcard.age} años`;
+      document.getElementById("date").textContent = `Datos actualizados a ${data.influcard.updated_at_formated}`;
+
   } 
   
   else {
