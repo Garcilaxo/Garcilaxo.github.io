@@ -8,7 +8,7 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
-        console.log(data); // Imprimir el contenido del archivo JSON en la consola
+        console.log(data.influcard); // Imprimir el contenido del archivo JSON en la consola
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
