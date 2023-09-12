@@ -1,4 +1,5 @@
-window.CargarDatos = function(){
+/*
+function CargarDatos() {
   // Leer los datos del almacenamiento local
   const dataJSON = localStorage.getItem("datosJSON");
   if (dataJSON) {
@@ -12,3 +13,4 @@ window.CargarDatos = function(){
       console.error("No se encontraron datos en el almacenamiento local.");
   }
 }
+*/
