@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Leer los datos del almacenamiento local
   const dataJSON = localStorage.getItem("datosJSON");
+  console.log(data.influcard.username);
   if (dataJSON) {
       const data = JSON.parse(dataJSON);
 
