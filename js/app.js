@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("impresiones").textContent = `${data.influcard.avg_impressions_formated}`;
       document.getElementById("reproducciones").textContent = `${data.influcard.vplays_formated}`;
       document.getElementById("engagement").textContent = `${data.influcard.avg_engagement_formated}`;
+      document.getElementById("ir_alcance").textContent = `${data.influcard.ir_alcance}`;
+      document.getElementById("ir_audiencia").textContent = `${data.influcard.ir_audiencia}`;
+      document.getElementById("vr_alcance").textContent = `${data.influcard.vr_alcance}`;
+      document.getElementById("vr_audiencia").textContent = `${data.influcard.vr_audiencia}`;
+      document.getElementById("er_alcance").textContent = `${data.influcard.er_alcance}`;
+      document.getElementById("er_audiencia").textContent = `${data.influcard.er_audiencia}`;
+      
+
+      
+
       
       
 
