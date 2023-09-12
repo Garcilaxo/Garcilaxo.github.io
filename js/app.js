@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
       // Mostrar los datos en la página
       document.getElementById("nombre").textContent = `${data.influcard.username}`;
-      //document.getElementById("edad").textContent = `Edad: ${data.edad}`;
+      document.getElementById("imagen").textContent = `${data.influcard.account_picture}`;
       //document.getElementById("ciudad").textContent = `Ciudad: ${data.ciudad}`;
   } else {
       console.error("No se encontraron datos en el almacenamiento local.");
