@@ -5,24 +5,16 @@ function Loading() {
     // Aquí puedes realizar alguna operación asincrónica, como cargar datos o realizar una solicitud AJAX
     // Después de que la operación asincrónica haya finalizado, puedes ocultar el mensaje de carga con Swal.close()
 
-    fetch("datos.json")
-        .then(function (res){
-            console.log(res);
-        })
-        /*
-        .then(data => {
-            // Almacenar los datos en el almacenamiento local (localStorage)
-            localStorage.setItem("datosJSON", JSON.stringify(data));
-        })
-        .catch(error => {
-            console.error("Error:", error);
-        });
-        */
-
-    // Redirigir al usuario al archivo resultado.html
+    fetch('json/data.json')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Imprimir el contenido del archivo JSON en la consola
+    })
+    .catch(error => {
+        console.error('Error al cargar el archivo JSON:', error);
+    });
+    
     window.location.href = "Ficha.html";
 
     Swal.close();
 }
-
-
