@@ -44,6 +44,11 @@ a{
     grid-row: span 3;
 }
 
+.graphs_img{
+    height: 20px;
+    width: 20px;
+}
+
 .oval-image {
     height: auto;
     display: flex;
