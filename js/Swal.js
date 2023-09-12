@@ -8,6 +8,8 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
+
+        Swal.close();
         // Almacenar los datos en el almacenamiento local (localStorage)
         localStorage.setItem("datosJSON", JSON.stringify(data));
         console.log(data.influcard);
@@ -18,8 +20,6 @@ function Loading() {
     .catch(error => {
         console.error("Error:", error);
     });
-
-    Swal.close();
 }
 
 
