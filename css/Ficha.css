@@ -55,6 +55,14 @@
     border-radius: 50% 50% 15% 50%;
 }
 
+.insta{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 18px;
+    left: 10px;
+}
+
 .align-text-column{
     display: flex;
     flex-direction: column; /* Alinea los elementos en una columna vertical */

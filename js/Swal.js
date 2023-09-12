@@ -6,13 +6,19 @@ function Loading() {
     // Después de que la operación asincrónica haya finalizado, puedes ocultar el mensaje de carga con Swal.close()
 
     fetch('json/data.json')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); // Imprimir el contenido del archivo JSON en la consola
-    })
-    .catch(error => {
-        console.error('Error al cargar el archivo JSON:', error);
-    });
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            // Mostrar los datos en el HTML
+            document.getElementById("nombre").textContent = data.username;
+            //document.getElementById("edad").textContent = data.edad;
+            //document.getElementById("ciudad").textContent = data.ciudad;
+            console.log(document.getElementById("nombre").textContent);
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo JSON:', error);
+        });
     
     window.location.href = "Ficha.html";
 
