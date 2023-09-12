@@ -8,7 +8,7 @@ function Loading() {
     fetch('json/data.json')
     .then(response => response.json())
     .then(data => {
-        const claves = console.log(data)
+        console.log(data);
     })
     .catch(error => {
         console.error('Error al cargar el archivo JSON:', error);
