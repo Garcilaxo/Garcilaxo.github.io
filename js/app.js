@@ -8,8 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("nombre").textContent = `${data.influcard.username}`;
       document.getElementById("imagen").src = data.influcard.account_picture;
       document.getElementById("link").href = data.influcard.account_url;
-      document.getElementById("edad").textContent = ` Mujer, ${data.influcard.age} años`;
-  } else {
+      document.getElementById("edad").textContent = `Mujer, ${data.influcard.age} años`;
+  } 
+  
+  else {
       console.error("No se encontraron datos en el almacenamiento local.");
   }
 });
