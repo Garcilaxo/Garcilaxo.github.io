@@ -111,13 +111,13 @@ a{
 }
 
 /* Oculta el thumb o handle del slider */
-input[type="range"] {
+#slider_1, #slider_2, #slider_3, #slider_4, #slider_5, #slider_6{
     width: 65%;
     margin: 20px;
     background: blue;
 }
 
-#slider_es{
+#slider_es, #slider_us, #slider_mx, #slider_fr, #slider_it, #slider_other{
     width: 65%;
     margin: 20px;
     background: red;
