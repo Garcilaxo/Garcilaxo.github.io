@@ -15,9 +15,23 @@ a{
 }
 
 .grid-subcontainer2 {
-    display: flex; /* Usamos flexbox para organizar los elementos en fila */
-    align-items: center; /* Centramos verticalmente los elementos */
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.grid-subcontainer3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+}
+
+.divide{
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .borde{
@@ -89,3 +103,4 @@ a{
     justify-content: center; /* Centra verticalmente los elementos */
     align-items: center; /* Centra horizontalmente los elementos */
 }
+  

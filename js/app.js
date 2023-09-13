@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("vr_audiencia").textContent = `${data.influcard.vr_audiencia} %`;
       document.getElementById("er_alcance").textContent = `${data.influcard.er_alcance} %`;
       document.getElementById("er_audiencia").textContent = `${data.influcard.er_audiencia} %`;
+      document.getElementById("male").textContent = `${data.influcard.insight_perc_m} %`;
+      document.getElementById("female").textContent = `${data.influcard.insight_perc_f} %`;
+
+    
+
       
 
       
