@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("color_slider6").slider = `${data.influcard.insight_perc_65} %`;
       */
 
+      console.log(slider.style.background);
+
 
   } 
   
