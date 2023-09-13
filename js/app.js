@@ -39,15 +39,13 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("porcentaje5").textContent = `${parseFloat(data.influcard.insight_perc_45.toFixed(2))} %`;
       document.getElementById("porcentaje6").textContent = `${parseFloat(data.influcard.insight_perc_65.toFixed(2))} %`;
 
-      console.log(document.getElementById("slider1").slider);
 
-      //document.getElementById("color_slider1").slider.style.background = `linear-gradient(to right, rgb(56, 132, 232) 80%, rgb(216, 212, 212) 20%);`;
-      /*document.getElementById("color_slider2").slider = `${data.influcard.insight_perc_18} %`;
-      document.getElementById("color_slider3").slider = `${data.influcard.insight_perc_25} %`;
-      document.getElementById("color_slider4").slider = `${data.influcard.insight_perc_35} %`;
-      document.getElementById("color_slider5").slider = `${data.influcard.insight_perc_45} %`;
-      document.getElementById("color_slider6").slider = `${data.influcard.insight_perc_65} %`;
-      */
+      document.getElementById("slider1").slider.value = `${data.influcard.insight_perc_13}`;
+      document.getElementById("slider2").slider.value = `${data.influcard.insight_perc_18} %`;
+      document.getElementById("slider3").slider.value = `${data.influcard.insight_perc_25} %`;
+      document.getElementById("slider4").slider.value = `${data.influcard.insight_perc_35} %`;
+      document.getElementById("slider5").slider.value = `${data.influcard.insight_perc_45} %`;
+      document.getElementById("slider6").slider.value = `${data.influcard.insight_perc_65} %`;
 
 
   } 
