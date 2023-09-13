@@ -61,8 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_shot}`;
       document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_shot}`;
 
-      console.log(data.influcard.top_countries[0].country_shot);
-
   } 
   
   else {

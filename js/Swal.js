@@ -13,6 +13,7 @@ function Loading() {
         // Almacenar los datos en el almacenamiento local (localStorage)
         localStorage.setItem("datosJSON", JSON.stringify(data));
         console.log(data.influcard);
+        console.log(data.influcard.top_countries[0].country_shot);
 
         // Redirigir al usuario al archivo resultado.html
         window.location.href = "Ficha.html";
