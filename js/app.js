@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("IT_value").textContent = `${data.influcard.top_countries_formated[4].value} %`;
       document.getElementById("otros_value").textContent = `${data.influcard.top_countries_formated[5].value} %`;
 
-      document.getElementById("slider_es").value = `${data.top_countries_formated[0].value}`;
+      document.getElementById("slider_es").value = `${data.influcard.top_countries_formated[0].value}`;
       document.getElementById("slider2_us").value = `${data.influcard.top_countries_formated[1].value}`;
       document.getElementById("slider3_mx").value = `${data.influcard.top_countries_formated[2].value}`;
       document.getElementById("slider4_it").value = `${data.influcard.top_countries_formated[3].value}`;
