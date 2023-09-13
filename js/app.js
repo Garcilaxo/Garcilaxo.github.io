@@ -52,18 +52,20 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_short}`;
       document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_short}`;
 
-      document.getElementById("slider_es").value = `${parseFloat(data.top_countries_formated[0].value.toFixed(2))}`;
-      document.getElementById("slider2_us").value = `${parseFloat(data.influcard.top_countries_formated[1].value.toFixed(2))}`;
-      document.getElementById("slider3_mx").value = `${parseFloat(data.influcard.top_countries_formated[2].value.toFixed(2))}`;
-      document.getElementById("slider4_it").value = `${parseFloat(data.influcard.top_countries_formated[3].value.toFixed(2))}`;
-      document.getElementById("slider5_other").value = `${parseFloat(data.influcard.top_countries_formated[4].value.toFixed(2))}`;
-
       document.getElementById("ES_value").textContent = `${data.influcard.top_countries_formated[0].value} %`;
       document.getElementById("US_value").textContent = `${data.influcard.top_countries_formated[1].value} %`;
       document.getElementById("MX_value").textContent = `${data.influcard.top_countries_formated[2].value} %`;
       document.getElementById("FR_value").textContent = `${data.influcard.top_countries_formated[3].value} %`;
       document.getElementById("IT_value").textContent = `${data.influcard.top_countries_formated[4].value} %`;
       document.getElementById("otros_value").textContent = `${data.influcard.top_countries_formated[5].value} %`;
+
+      document.getElementById("slider_es").value = `${data.top_countries_formated[0].value}`;
+      document.getElementById("slider2_us").value = `${data.influcard.top_countries_formated[1].value}`;
+      document.getElementById("slider3_mx").value = `${data.influcard.top_countries_formated[2].value}`;
+      document.getElementById("slider4_it").value = `${data.influcard.top_countries_formated[3].value}`;
+      document.getElementById("slider5_other").value = `${data.influcard.top_countries_formated[4].value}`;
+
+      
 
 
   } 
