@@ -26,6 +26,12 @@ a{
     align-items: flex-start; /* Alinea el contenido en la parte superior */
 }
 
+.grid-subcontainer4 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Alinea el contenido en la parte superior */
+}
+
 .divide{
     flex: 1;
     border-radius: 5px;
