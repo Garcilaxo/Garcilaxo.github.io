@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("slider3").value = `${data.influcard.insight_perc_25}`;
       document.getElementById("slider4").value = `${data.influcard.insight_perc_35}`;
       document.getElementById("slider5").value = `${data.influcard.insight_perc_45}`;
-      document.getElementById("slider6").value = `${data.influcard.insight_perc_65}`;
+      //document.getElementById("slider6").value = `${data.influcard.insight_perc_65}`;
 
       document.getElementById("es_flag").href = `${data.influcard.top_countries_formated[0].href}`;
       document.getElementById("us_flag").href = `${data.influcard.top_countries_formated[1].href}`;
@@ -54,13 +54,12 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("it_flag").href = `${data.influcard.top_countries_formated[4].href}`;
       document.getElementById("other_flag").href = `${data.influcard.top_countries_formated[5].href}`;
 
-      document.getElementById("ES").textContent = `${data.influcard.top_countries_formated[0].country_shot}`;
-      document.getElementById("US").textContent = `${data.influcard.top_countries_formated[1].country_shot}`;
-      document.getElementById("MX").textContent = `${data.influcard.top_countries_formated[2].country_shot}`;
-      document.getElementById("FR").textContent = `${data.influcard.top_countries_formated[3].country_shot}`;
-      document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_shot}`;
-      document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_shot}`;
-
+      document.getElementById("ES").textContent = `${data.influcard.top_countries_formated[0].country_short}`;
+      document.getElementById("US").textContent = `${data.influcard.top_countries_formated[0].country_short}`;
+      document.getElementById("MX").textContent = `${data.influcard.top_countries_formated[2].country_short}`;
+      document.getElementById("FR").textContent = `${data.influcard.top_countries_formated[3].country_short}`;
+      document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_short}`;
+      document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_short}`;
 
   } 
   
