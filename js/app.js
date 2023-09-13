@@ -47,6 +47,17 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("slider5").value = `${data.influcard.insight_perc_45}`;
       document.getElementById("slider6").value = `${data.influcard.insight_perc_65}`;
 
+      document.getElementById("ES").textContent = `${data.influcard.top_countries_formated[0].country_shot}`;
+      document.getElementById("US").textContent = `${data.influcard.top_countries_formated[1].country_shot}`;
+      document.getElementById("MX").textContent = `${data.influcard.top_countries_formated[2].country_shot}`;
+      document.getElementById("FR").textContent = `${data.influcard.top_countries_formated[3].country_shot}`;
+      document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_shot}`;
+  
+
+
+      //insight_perc_c1
+
+
 
   } 
   
