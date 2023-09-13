@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("porcentaje6").textContent = `${parseFloat(data.influcard.insight_perc_65.toFixed(2))} %`;
 
 
-      document.getElementById("slider1").slider.value = `${data.influcard.insight_perc_13}`;
-      document.getElementById("slider2").slider.value = `${data.influcard.insight_perc_18} %`;
-      document.getElementById("slider3").slider.value = `${data.influcard.insight_perc_25} %`;
-      document.getElementById("slider4").slider.value = `${data.influcard.insight_perc_35} %`;
-      document.getElementById("slider5").slider.value = `${data.influcard.insight_perc_45} %`;
-      document.getElementById("slider6").slider.value = `${data.influcard.insight_perc_65} %`;
+      document.getElementById("slider1").value = `${data.influcard.insight_perc_13}`;
+      document.getElementById("slider2").value = `${data.influcard.insight_perc_18}`;
+      document.getElementById("slider3").value = `${data.influcard.insight_perc_25}`;
+      document.getElementById("slider4").value = `${data.influcard.insight_perc_35}`;
+      document.getElementById("slider5").value = `${data.influcard.insight_perc_45}`;
+      document.getElementById("slider6").value = `${data.influcard.insight_perc_65}`;
 
 
   } 
