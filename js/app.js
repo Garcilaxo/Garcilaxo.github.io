@@ -45,23 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("slider3").value = `${parseFloat(data.influcard.insight_perc_25.toFixed(2))}`;
       document.getElementById("slider4").value = `${parseFloat(data.influcard.insight_perc_35.toFixed(2))}`;
       document.getElementById("slider5").value = `${parseFloat(data.influcard.insight_perc_45.toFixed(2))}`;
-      document.getElementById("slider6").value = `${parseFloat(data.influcard.insight_perc_65.toFixed(2))}`;
 
-      document.getElementById("es_flag").src = `${data.influcard.top_countries_formated[0].href}`;
-      document.getElementById("us_flag").src = `${data.influcard.top_countries_formated[1].href}`;
-      document.getElementById("mx_flag").src = `${data.influcard.top_countries_formated[2].href}`;
-      document.getElementById("fr_flag").src = `${data.influcard.top_countries_formated[3].href}`;
-      document.getElementById("it_flag").src = `${data.influcard.top_countries_formated[4].href}`;
-      document.getElementById("other_flag").src = `${data.influcard.top_countries_formated[5].href}`;
-
-      /*
       document.getElementById("ES").textContent = `${data.influcard.top_countries_formated[0].country_short}`;
       document.getElementById("US").textContent = `${data.influcard.top_countries_formated[0].country_short}`;
       document.getElementById("MX").textContent = `${data.influcard.top_countries_formated[2].country_short}`;
       document.getElementById("FR").textContent = `${data.influcard.top_countries_formated[3].country_short}`;
       document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_short}`;
       document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_short}`;
-      */
+
   } 
   
   else {
