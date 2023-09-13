@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("porcentaje5").textContent = `${parseFloat(data.influcard.insight_perc_45.toFixed(2))} %`;
       document.getElementById("porcentaje6").textContent = `${parseFloat(data.influcard.insight_perc_65.toFixed(2))} %`;
 
-      document.getElementById("color_slider1").slider.style.background = `linear-gradient(to right, rgb(56, 132, 232) ${data.influcard.insight_perc_13}%, rgb(216, 212, 212) 90.73%);`;
+      document.getElementById("color_slider1").style = `background: linear-gradient(to right, rgb(56, 132, 232) ${data.influcard.insight_perc_13}%, rgb(216, 212, 212) 90.73%);`;
       /*document.getElementById("color_slider2").slider = `${data.influcard.insight_perc_18} %`;
       document.getElementById("color_slider3").slider = `${data.influcard.insight_perc_25} %`;
       document.getElementById("color_slider4").slider = `${data.influcard.insight_perc_35} %`;
