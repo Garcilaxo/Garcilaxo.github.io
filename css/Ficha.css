@@ -117,7 +117,7 @@ input[type="range"] {
     background: blue;
 }
 
-#slider_es, #slider_us, #slider_mx, #slider_fr, #slider_it, #slider_other{
+#slider_es{
     width: 65%;
     margin: 20px;
     background: red;
