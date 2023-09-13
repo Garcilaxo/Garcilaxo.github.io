@@ -53,6 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("IT").textContent = `${data.influcard.top_countries_formated[4].country_short}`;
       document.getElementById("otros").textContent = `${data.influcard.top_countries_formated[5].country_short}`;
 
+      document.getElementById("ES_value").textContent = `${data.influcard.top_countries_formated[0].value}`;
+      document.getElementById("US_value").textContent = `${data.influcard.top_countries_formated[0].value}`;
+      document.getElementById("MX_value").textContent = `${data.influcard.top_countries_formated[2].value}`;
+      document.getElementById("FR_value").textContent = `${data.influcard.top_countries_formated[3].value}`;
+      document.getElementById("IT_value").textContent = `${data.influcard.top_countries_formated[4].value}`;
+      document.getElementById("otros_value").textContent = `${data.influcard.top_countries_formated[5].value}`;
+
+
   } 
   
   else {
