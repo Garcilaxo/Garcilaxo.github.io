@@ -117,6 +117,12 @@ input[type="range"] {
     background: blue;
 }
 
+#slider_es, #slider_us, #slider_mx, #slider_fr, #slider_it, #slider_other{
+    width: 65%;
+    margin: 20px;
+    background: red;
+}
+
 /* Estiliza el riel del slider */
 input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
