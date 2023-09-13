@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("porcentaje5").textContent = `${parseFloat(data.influcard.insight_perc_45.toFixed(2))} %`;
       document.getElementById("porcentaje6").textContent = `${parseFloat(data.influcard.insight_perc_65.toFixed(2))} %`;
 
+      console.log(document.getElementById("color_slider1").slider);
+
       //document.getElementById("color_slider1").slider.style.background = `linear-gradient(to right, rgb(56, 132, 232) 80%, rgb(216, 212, 212) 20%);`;
       /*document.getElementById("color_slider2").slider = `${data.influcard.insight_perc_18} %`;
       document.getElementById("color_slider3").slider = `${data.influcard.insight_perc_25} %`;
