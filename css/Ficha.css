@@ -103,4 +103,41 @@ a{
     justify-content: center; /* Centra verticalmente los elementos */
     align-items: center; /* Centra horizontalmente los elementos */
 }
+
+/* Oculta el thumb o handle del slider */
+input[type="range"] {
+    width: 65%;
+    margin: 20px;
+    -webkit-appearance: none; /* Esto oculta el handle en navegadores WebKit (como Chrome y Safari) */
+    appearance: none; /* Esto oculta el handle en navegadores no WebKit (como Firefox) */
+}
+
+/* Estiliza el riel del slider */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px; /* Altura del riel */
+    border: none;
+    border-radius: 3px; /* Bordes redondeados para el riel */
+}
+
+/* Estiliza el control deslizante (barra) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Oculta el handle en navegadores WebKit */
+    appearance: none; /* Oculta el handle en navegadores no WebKit */
+    width: 0; /* Ancho cero para ocultar el handle */
+}
+
+/* Estiliza el riel en navegadores no WebKit (como Firefox) */
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background: #888;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Estiliza el handle en navegadores no WebKit (como Firefox) */
+input[type="range"]::-moz-range-thumb {
+    width: 0;
+}
   
