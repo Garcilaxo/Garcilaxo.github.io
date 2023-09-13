@@ -32,14 +32,14 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("male").textContent = `${data.influcard.insight_perc_m} %`;
       document.getElementById("female").textContent = `${data.influcard.insight_perc_f} %`;
 
-      document.getElementById("porcentaje1").textContent = `${data.influcard.insight_perc_13.numero.toFixed(2)} %`;
-      document.getElementById("porcentaje2").textContent = `${data.influcard.insight_perc_18.numero.toFixed(2)} %`;
-      document.getElementById("porcentaje3").textContent = `${data.influcard.insight_perc_25.numero.toFixed(2)} %`;
-      document.getElementById("porcentaje4").textContent = `${data.influcard.insight_perc_35.numero.toFixed(2)} %`;
-      document.getElementById("porcentaje5").textContent = `${data.influcard.insight_perc_45.numero.toFixed(2)} %`;
-      document.getElementById("porcentaje6").textContent = `${data.influcard.insight_perc_65.numero.toFixed(2)} %`;
+      document.getElementById("porcentaje1").textContent = `${parseFloat(data.influcard.insight_perc_13.numero.toFixed(2))} %`;
+      document.getElementById("porcentaje2").textContent = `${parseFloat(data.influcard.insight_perc_18.numero.toFixed(2))} %`;
+      document.getElementById("porcentaje3").textContent = `${parseFloat(data.influcard.insight_perc_25.numero.toFixed(2))} %`;
+      document.getElementById("porcentaje4").textContent = `${parseFloat(data.influcard.insight_perc_35.numero.toFixed(2))} %`;
+      document.getElementById("porcentaje5").textContent = `${parseFloat(data.influcard.insight_perc_45.numero.toFixed(2))} %`;
+      document.getElementById("porcentaje6").textContent = `${parseFloat(data.influcard.insight_perc_65.numero.toFixed(2))} %`;
 
-      document.getElementById("color_slider1").slider = `background: linear-gradient(to right, rgb(56, 132, 232) ${data.influcard.insight_perc_13.toString()}%, rgb(216, 212, 212) 90.73%);`;
+      document.getElementById("color_slider1").slider = `background: linear-gradient(to right, rgb(56, 132, 232) ${data.influcard.insight_perc_13}%, rgb(216, 212, 212) 90.73%);`;
       /*document.getElementById("color_slider2").slider = `${data.influcard.insight_perc_18} %`;
       document.getElementById("color_slider3").slider = `${data.influcard.insight_perc_25} %`;
       document.getElementById("color_slider4").slider = `${data.influcard.insight_perc_35} %`;
